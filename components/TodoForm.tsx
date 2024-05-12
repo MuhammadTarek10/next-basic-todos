@@ -7,6 +7,8 @@ const TodoForm = () => {
     event.preventDefault();
     newTodo(new FormData(event.currentTarget));
     event.currentTarget.reset();
+    history.pushState({}, "", "/todos");
+    event.currentTarget.content.focus();
   };
 
   return (

@@ -7,7 +7,7 @@ interface DashboardLayoutProps {
 
 const DashboardLayout = ({ children }: DashboardLayoutProps) => {
   return (
-    <div className="p-8 flex-col text-center">
+    <div className="p-8 text-center">
       <h1>Dashboard</h1>
       <TodoForm />
       <div>{children}</div>
